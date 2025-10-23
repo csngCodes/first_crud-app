@@ -1,0 +1,9 @@
+env/
+.env
+__pycache__/
+*.pyc
+project.db
+*.sqlite3
+.vscode/
+node_modules/
+instance/*.py     # if instance contains secrets, keep instance in gitignore or exclude specific files

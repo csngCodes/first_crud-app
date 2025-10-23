@@ -1,0 +1,92 @@
+// Color Variables
+$primary-color: #2f213b;
+$primary-hover-color: #a584b0;
+$success-color: #4caf50;
+$success-hover-color: #81c784;
+$title-color: #370662;
+$bg-color: #5d4b63;
+$button-bg-color: hsl(28, 92%, 14%);
+$button-hover-bg-color: hsl(28, 45%, 60%);
+
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: $bg-color;
+    color: $primary-color;
+    :link {
+        color: hsl(28, 92%, 14%);
+    }
+}
+
+.content{
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    h1{
+        color: $title-color;
+    }
+
+    h4{
+        color: #2f6336;
+    }
+
+    table{
+        width: 100%;
+        margin-top: 20px;
+        border-collapse: collapse;
+
+        th,td{
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+
+            th{
+                background-color: #000000;
+                color: #333;
+            }
+        }
+    }
+
+    a{
+        display: inline-block;
+        padding: 8px 16px;
+        margin: 5px;
+        border-radius: 20px;
+        background-color: $button-bg-color;
+        color: $button-hover-bg-color;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+
+        &:hover{
+            background-color: $button-hover-bg-color;
+            color: $button-bg-color;
+        }
+
+        &:active{
+            color: white;
+        }
+    }
+
+    input{
+        padding: 10px;
+        margin: 5px;
+        border: 1px solid;
+        border-radius: 5px;
+    }
+
+    #btn_add{
+        background-color: $success-color;
+        color:#fff;
+        cursor: pointer;
+        &:hover{
+            background-color: $success-hover-color;
+        }
+    }
+}
